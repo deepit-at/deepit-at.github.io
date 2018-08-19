@@ -9,6 +9,6 @@ deepit.at
   Language:     English
   Built with:   Jekyll {{ jekyll.version }} <https://jekyllrb.com>
                 Visual Studio Code <https://code.visualstudio.com>
-                {% assign plugins = site.github.versions | sort_natural %}
+                {% assign plugins = site.github.versions | sort %}
                 {% for plugin in plugins %}{% assign plugin = plugin.split: '=>' %}{{ plugin[0] }}: {{ plugin[1] }}
                 {% endfor %}
