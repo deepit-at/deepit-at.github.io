@@ -1,0 +1,11 @@
+---
+---
+
+deepit.at
+
+  Author:       see {{ '/about' | absolute_url }}
+
+  Last updated: {{ site.time | date_to_rfc822 }}
+  Language:     English
+  Built with:   Jekyll {{ jekyll.version }} <https://jekyllrb.com>
+                Visual Studio Code <https://code.visualstudio.com>
