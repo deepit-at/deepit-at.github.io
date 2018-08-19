@@ -11,6 +11,7 @@ layout: default
 
 	<!--
 		https://github.com/deepit-at/deepit-at.github.io/raw/master/blog/index.html
-		{{ github_edit_link | replace: "/edit/", "/raw/" }}
+		{% assign github_raw link = github_edit_link | replace: "/edit/", "/raw/" %}
+		{{ github_raw_link }}
 		{{ site.github.repository_url }}/raw/{{ site.branch }}/{{ page.relative_path }}
 	-->
