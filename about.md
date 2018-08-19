@@ -1,11 +1,6 @@
 ---
-layout:         about
-
 title:          About
 description:    ''
-
-menu:           true
-order:          8
 ---
 
 {{ page.content | reading_time }}
