@@ -8,3 +8,8 @@ layout: default
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
+
+	<!--
+		https://github.com/deepit-at/deepit-at.github.io/edit/master/index.html
+		{{ site.github.repository_url }}/commits/{{ site.branch }}/{{ page.relative_path }}
+	-->
