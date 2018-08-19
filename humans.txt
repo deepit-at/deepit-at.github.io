@@ -9,3 +9,5 @@ deepit.at
   Language:     English
   Built with:   Jekyll {{ jekyll.version }} <https://jekyllrb.com>
                 Visual Studio Code <https://code.visualstudio.com>
+
+  {{ site.github.versions }}
