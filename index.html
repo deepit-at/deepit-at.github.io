@@ -8,9 +8,9 @@
      lang="es" for Spanish, lang="de" for German, etc. See ISO 639. -->
 
 <head>
-	<title>This page intentionally left blank</title>
-	<meta name="robots" content="noindex, follow">
-	<link rel="made" href="http://www.this-page-intentionally-left-blank.org">
+    <title>This page intentionally left blank</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="made" href="http://www.this-page-intentionally-left-blank.org">
 </head>
 
 <body>
@@ -20,20 +20,20 @@
      normal text to heading, then use <h1>...</h1> -->
 <p>This page intentionally left blank</p>
 
+<a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.relative_path }}">
+    Edit this page on GitHub
+</a>
+	
 <!-- Paragraph with style information to position the following links
-     to the bottom right corner in modern, CSS-aware browsers. -->
+    to the bottom right corner in modern, CSS-aware browsers. -->
 <p style="position:absolute;height:1em;bottom:1em;right:1em;text-align:right;">
-	<a href="http://www.this-page-intentionally-left-blank.org">take part</a></p>
+ <a href="http://www.this-page-intentionally-left-blank.org">take part</a></p>
 
 </body>
 
-	<!--
-		https://github.com/deepit-at/deepit-at.github.io/raw/master/blog/index.html
- 		{% include github_edit_link | replace: "/edit/", "/raw/" %}
-		{% assign github_edit_link = github_edit_link %}
-		{% assign github_raw_link = github_edit_link | replace: "/edit/", "/raw/" %}
-		{{ github_raw_link }}
-		{{ site.github.repository_url }}/raw/{{ site.branch }}{{ page.url | relative_path }}
-	-->
+    <!--
+        https://github.com/deepit-at/deepit-at.github.io/raw/master/index.html
+        {{ site.github.repository_url }}/raw/{{ site.branch }}{{ page.relative_path }}
+    -->
 
 </html>
