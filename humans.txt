@@ -11,5 +11,5 @@ deepit.at
                 Visual Studio Code <https://code.visualstudio.com>
 
   {% for plugin in site.github.versions %}
-    {{ plugin }}
+    {{ plugin.label }}
   {% endfor %}
