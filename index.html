@@ -20,7 +20,7 @@
      normal text to heading, then use <h1>...</h1> -->
 <p>This page intentionally left blank</p>
 
-{% capture github_raw_link %}{% github_edit_link %}{% endcapture %}{% assign github_raw_link | replace: "/edit/", "/raw/" %}
+{% capture github_raw_link %}{% github_edit_link %}{% endcapture %}{% assign github_raw_link = github_raw_link | replace: "/edit/", "/raw/" %}
 <a href="{{ github_raw_link }}">
     View source of this page on GitHub
 </a>
