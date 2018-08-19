@@ -8,10 +8,3 @@ layout: default
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
-
-	<!--
-		https://github.com/deepit-at/deepit-at.github.io/raw/master/blog/index.html
-		{% assign github_raw_link = github_edit_link | replace: "/edit/", "/raw/" %}
-		{{ github_raw_link }}
-		{{ site.github.repository_url }}/raw/{{ site.branch }}{{ page.permalink | relative_path }}
-	-->
