@@ -10,4 +10,6 @@ deepit.at
   Built with:   Jekyll {{ jekyll.version }} <https://jekyllrb.com>
                 Visual Studio Code <https://code.visualstudio.com>
 
-  {{ site.github.versions }}
+  {% for plugin in site.github.versions %}
+    {{ plugin.key }}
+  {% endfor %}
