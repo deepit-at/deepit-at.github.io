@@ -4,12 +4,11 @@
 deepit.at
 
   Author:       see {{ '/about' | absolute_url }}
+  Language:     en-US; American English
 
   Last updated: {{ site.time | date_to_rfc822 }}
-  Language:     English
   Built with:   Jekyll: {{ jekyll.version }} <https://jekyllrb.com>
-                {% assign plugins = site.github.versions | sort %}
-                {% for plugin in plugins %}{% assign plugin = plugin.split: '=>' %}{% unless plugin[0] == 'jekyll' or plugin[0] contains 'jekyll-theme' %}{{ plugin[0] }}: {{ plugin[1] }}{% endunless %}
+                {% assign plugins = site.github.versions | sort %}{% for plugin in plugins %}{% assign plugin = plugin.split: '=>' %}{% unless plugin[0] == 'jekyll' or plugin[0] contains 'jekyll-theme' %}{{ plugin[0] }}: {{ plugin[1] }}{% endunless %}
                 {% endfor %}
                 Visual Studio Code <https://code.visualstudio.com>
 
