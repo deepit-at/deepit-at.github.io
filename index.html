@@ -29,7 +29,7 @@
 
 	<!--
 		https://github.com/deepit-at/deepit-at.github.io/raw/master/blog/index.html
- 		{% github_edit_link %}
+ 		{% include github_edit_link | replace: "/edit/", "/raw/" %}
 		{% assign github_edit_link = github_edit_link %}
 		{% assign github_raw_link = github_edit_link | replace: "/edit/", "/raw/" %}
 		{{ github_raw_link }}
