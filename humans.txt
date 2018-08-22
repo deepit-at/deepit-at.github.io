@@ -27,4 +27,4 @@
                      a lot of trial and error
                      some patience 🤯
 
-{{ site.github }}
+{{ site.github.repository_url }}
