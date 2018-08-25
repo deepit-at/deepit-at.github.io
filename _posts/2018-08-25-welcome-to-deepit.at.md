@@ -22,7 +22,7 @@ excerpt: |
 Hello curious folk!
 
 I'm happy to welcome you to my blog.
-In my job (see below or more detailed on [about](about)) I relied heavily on the knowledge of others which I found in the community around Microsoft & Windows - in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk. Sure I also made my own experiences and gained a lot of knowledge myself.
+In my job (see below or more detailed on [about](/about)) I relied heavily on the knowledge of others which I found in the community around Microsoft & Windows - in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk. Sure I also made my own experiences and gained a lot of knowledge myself.
 
 Now, 10+ years later, I decided it's time to give something back. Back to the giants on whose shoulders I stood at my own beginning.
 Sure, they (you?) may not quite need it, but then - hopefully - people new to this job can learn from me.
