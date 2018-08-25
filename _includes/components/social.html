@@ -5,7 +5,6 @@
       {% include components/social-list-item.html platform=link.first username=link.last %}
     {% endfor %}
   {% else %}
-
     {% assign twitter_username = author.twitter.username | default: author.twitter | default:site.twitter.username | default:site.twitter | default:site.twitter_username %}
     {% if twitter_username %}
       {% include components/social-list-item.html platform="twitter" username=twitter_username %}
