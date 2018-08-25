@@ -16,7 +16,7 @@ title:              'Welcome!'
 # excerpt_separator:  <!--more-->
 excerpt: |
     I'm happy to welcome you to my blog.
-    In my job I learned a lot from the community, posts in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk. Sure I also made my own experiences and gained a lot of knowledge myself.
+    In my job I learned a lot from the community, posts in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk. Sure, I also made my own experiences and gained a lot of knowledge myself.
 ---
 
 Hello curious folk!
