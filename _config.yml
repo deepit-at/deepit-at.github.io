@@ -247,12 +247,19 @@ include:
 # ========================================================================================
 
 plugins:
+  - jekyll-default-layout
   - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
   - jekyll-redirect-from
+  - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-titles-from-headings
   - jemoji
-  - jekyll-include-cache
 
 repository: deepit-at/deepit-at.github.io
 
