@@ -29,26 +29,18 @@ _site*
 *.sublime-project
 *.sublime-workspace
 nbproject
-Thumbs.db
-
-# grunt-html-validation
-validation-report.json
-validation-status.json
+thumbs.db
 
 # Folders to ignore
 _zip
 .bundle
+.git
 .jekyll-metadata
 .sass-cache
+.vscode
 *.gem
 node_modules
 vendor/bundle
-.vscode
-.git
-
-# Logs
-logs
-*.log
 
 # Bundler
 /.bundle
