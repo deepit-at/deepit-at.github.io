@@ -23,6 +23,12 @@
         {% endif %}
       {% endif %}
       {% assign date_string = post.date | date:post_format %}
+      {% if site.data.strings.date_formats.append_tz %}
+        {% assign date_string_xmlschema = post.date | date_to_xml_schema %}
+        {% assign date_string_helper    = post.date | date: '%Y-%m-%d %H:%M:%S' %}
+        {% assign tz_offset = date_string_xmlschema | remove: date_string_helper %}
+        {% assign date_string = date_string | append:' GMT' | append: tz_offset %}
+      {% endif %}
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ date_string }}</time>
       {% if post.last_modified_at %}
         ({{ last_modified }} {{ post.last_modified_at | date:post_format | strip }})
