@@ -220,7 +220,7 @@ exclude:
   - webpack.config.js
 include:
   - LICENSE.md
-
+  - README.md
 
 # Plugins
 # ========================================================================================
