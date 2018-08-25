@@ -25,16 +25,13 @@ Now, 10+ years later, I decided it's time to give something back. Back to the gi
 
 ## Credits
 
-{% unless jekyll.environment == 'development' %}
-    {% capture github_raw_link %}{% github_edit_link %}{% endcapture %}{% assign github_raw_link = github_raw_link | replace: "/edit/", "/raw/" %}
-{% endunless %}
-
 ### Jekyll
 
 This site/blog is published using [jekyll] which is hosted on [GitHub pages].
 Please follow their link to find information about both open source project and their license.
 
 {% unless jekyll.environment == 'development' %}
+    {% capture github_raw_link %}{% github_edit_link %}{% endcapture %}{% assign github_raw_link = github_raw_link | replace: "/edit/", "/raw/" %}
 ### GitHub
 As this blog itself is hosted on GitHub, you may go ahead and look for the source code for this very page [here]({{ github_raw_link }})
 {% endunless %}
