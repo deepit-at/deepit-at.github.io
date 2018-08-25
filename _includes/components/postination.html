@@ -1,0 +1,15 @@
+<h2 class="sr-only">{{ site.data.strings.pagination | default:"Pagination" }}</h2>
+<nav class="pagination heading clearfix" role="navigation">
+  <ul>
+    <li class="pagination-item previous">
+      {% assign prev_title = page.previous.title | default:"Previous" | prepend: "&nbsp;" | prepend: site.data.strings.previous %}
+      {% assign prev_href = page.previous.url | relative_url %}
+      {% include components/link.html rel="prev" title=prev_title href=prev_href %}
+    </li>
+    <li class="pagination-item next">
+      {% assign next_title = page.next.title | default:"Next" | append: "&nbsp;" | append: site.data.strings.next %}
+      {% assign next_href = page.next.url | relative_url %}
+      {% include components/link.html rel="next" title=next_title href=next_href %}
+    </li>
+  </ul>
+</nav>

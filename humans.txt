@@ -11,10 +11,10 @@
     \/__,_ /\/____/\/____/ \ \ \/  \/_/\/__/\/_/\/__/\/_/ \/__/
                             \ \_\
                              \/_/
-  
+
 
   Author:            Stefan Farnik <{{ '/about' | absolute_url }}>
-  
+
   Language:          en-US
   Last updated:      {{ site.time | date_to_rfc822 }}
 
@@ -26,4 +26,3 @@
 
                      a lot of trial and error
                      some patience 🤯
-

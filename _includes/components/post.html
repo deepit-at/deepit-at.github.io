@@ -1,0 +1,69 @@
+{% assign post          = include.post          %}
+{% assign no_link_title = include.no_link_title %}
+{% assign no_excerpt    = include.no_excerpt    %}
+{% assign hide_image    = include.hide_image    %}
+{% assign author        = site.data.authors[post.author] | default:site.data.authors.first[1] | default:site.author %}
+
+<article id="post{{ post.id | replace:'/','-' }}" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title">
+      {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="flip-title">{% endunless %}
+        {{ post.title }}
+      {% unless no_link_title %}</a>{% endunless %}
+    </h1>
+
+    <p class="post-date heading">
+      {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
+      {% assign last_modified = site.data.strings.last_modified | default:"last modified: " %}
+      {% if post.last_modified_at and post.last_modified_at > post.date %}
+        {% assign datestring = post.date | date: "%d %b %Y" %}
+        {% assign modifiedstring = post.last_modified_at | date: "%d %b %Y" %}
+        {% if modifiedstring == datestring %}
+          {% assign post_format = site.data.strings.date_formats.post_detail | default:"%d %b %Y" %}
+        {% endif %}
+      {% endif %}
+      {% assign date_string = post.date | date:post_format %}
+      {% if site.data.strings.date_formats.append_tz %}
+        {% assign date_string_xmlschema = post.date | date_to_xml_schema %}
+        {% assign date_string_helper    = post.date | date: '%Y-%m-%d %H:%M:%S' %}
+        {% assign tz_offset = date_string_xmlschema | remove: date_string_helper %}
+        {% assign date_string = date_string | append:' GMT' | append: tz_offset %}
+      {% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ date_string }}</time>
+      {% if post.last_modified_at %}
+        ({{ last_modified }} {{ post.last_modified_at | date:post_format | strip }})
+      {% endif %}
+      {% assign category_start     = site.data.strings.category_start     | default:"in " %}
+      {% assign tag_start          = site.data.strings.tag_start          | default:"on " %}
+      {% assign category_separator = site.data.strings.category_separator | default:" / " %}
+      {% assign tag_separator      = site.data.strings.tag_separator      | default:", "  %}
+      {% assign written_by         = site.data.strings.written_by         | default:", written by "  %}
+      {% include components/tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
+      {% include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
+      {{ written_by }}{{ author.name }}
+    </p>
+
+    {% assign alt = false %}
+    {% unless hide_image %}{% if post.image %}
+      <div class="img lead sixteen-nine">
+        {% include components/hy-img.html img=post.image alt=post.title %}
+      </div>
+      {% assign alt = '' %}
+    {% endif %}{% endunless %}
+
+    {% include components/message.html text=post.description hide=page.hide_description alt=alt %}
+  </header>
+
+  {% if no_excerpt %}
+    {{ post.content }}
+  {% else %}
+    {{ post.excerpt }}
+    {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
+    {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+    <footer>
+      <p class="read-more">
+        {{ text | replace:"<!--post_title-->", post_title }}
+      </p>
+    </footer>
+  {% endif %}
+</article>

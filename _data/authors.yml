@@ -1,0 +1,45 @@
+# The primary author of this blog.
+# Must be the same as `author` in `_config.yml`.
+sfarnik:
+  name:              Stefan Farnik
+
+  # Used at the bottom of each page and at the top of the `about` layout
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:             |
+    My Name is Stefan Farnik and I'm living in Innsbruck in Austria.<br />
+    I am a System Engineer, where my focus lies on the Microsoft portfolio, following a Windows client through its deployment using System Center Configuration Manager and Management using Group Policy & Preferences and a lot of scripting (for me PowerShell and VBScript are the most prominently used languages).
+
+  # This photo will be used in the about section
+  picture:
+    path:            /assets/img/author_sfarnik_128x128.jpg
+    # srcset is optional, but can be used to provide higher res versions for retina displays
+    srcset:
+      1x:            /assets/img/author_sfarnik_128x128.jpg
+      2x:            /assets/img/author_sfarnik_256x256.jpg
+
+  # Social media icons in sidebar.
+  # Comment/uncommet to show/hide. Rearrange to change the order in which they appear.
+  social:
+    twitter:         stefan_farnik
+    email:           sfarnik@deepit.at
+    # linkedin:        sfarnik
+    # xing:            Stefan_Farnik
+    github:          sfarnik
+    # mvp:             {}
+    # answers:         fec05415-b388-493d-9d69-e6b3fd0a1c5c
+    # techcommunity:   38408
+    # technet:         Stefan+Farnik
+
+ninjacat:
+  name:              NinjaCat
+
+  about:             |
+    The beloved NinjaCat \#WindowsInsiders
+
+  accent_color:      '#268bd2'
+  theme_color:       '#202020'
+  # accent_image:      /
+
+  picture:
+    path:            /assets/img/author_ninjacat_128x128.jpg
+  twitter:           WindowsInsider

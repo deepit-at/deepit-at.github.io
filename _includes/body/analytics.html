@@ -1,0 +1,62 @@
+{% if site.google_analytics %}
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+    /*{% if site.hydejack.cookies_banner %}*/
+      if (navigator.CookiesOK) {
+        ga('create', '{{ site.google_analytics }}', 'auto');
+      } else if (document.cookie.indexOf("hy--cookies-ok=true") > -1) {
+        ga('create', '{{ site.google_analytics }}', {
+          'storage': 'none',
+          'clientId': localStorage ? localStorage.getItem('ga--client-id') : undefined
+        });
+      } else {
+        ga('create', '{{ site.google_analytics }}', {
+          'storage': 'none'
+        });
+        ga('set', 'forceSSL', true);
+        ga('set', 'anonymizeIp', true);
+      }
+    /*{% else %}*/
+      ga('create', '{{ site.google_analytics }}', 'auto');
+    /*{% endif %}*/
+
+    var pushStateEl = document.getElementsByTagName('hy-push-state')[0];
+    var timeoutId;
+    pushStateEl.addEventListener('hy-push-state-load', function() {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(function() {
+        ga('set', 'page', window.location.pathname);
+        ga('send', 'pageview');
+      }, 500);
+    });
+
+    window.loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  </script>
+{% endif %}
+{% if site.hotjar %}
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: {{ site.hotjar }}, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+{% endif %}
+{% if site.clicky %}
+  <script type="text/javascript">
+    var clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push({{ site.clicky }});
+    (function () {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//static.getclicky.com/js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+    })();
+  </script>
+  <noscript><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ site.clicky }}ns.gif" /></noscript>
+{% endif %}

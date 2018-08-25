@@ -1,0 +1,27 @@
+{% if site.copyright.size > 0 or site.legal.size > 0 or site.hydejack.advertise %}
+<footer role="contentinfo">
+  <hr/>
+  {% if site.copyright.size > 0 %}
+    {% assign year_from = site.posts[-1].date | date: '%Y' %}
+    {% assign year_to   = site.time | date: '%Y' %}
+    {% if year_from == null or year_from == year_to %}
+      {% assign year_string = year_from %}
+    {% else %}
+      {% assign from_to_seperator = site.data.strings.from_to_seperator | default: '-' %}
+      {% assign year_string = year_from | append: "&nbsp;" | append: from_to_seperator | append: "&nbsp;" | append: year_to %}
+    {% endif %}
+    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  {% endif %}
+  {% if site.legal.size > 0 %}
+    <nav class="legal"><small>
+    {% for le in site.legal %}
+      <a class="heading flip-title" href="{% include smart-url.txt url=le.href %}">{{ le.name | default:le.title }}</a>
+      {% unless forloop.last %}{{ site.data.strings.separator | default:'|' }}{% endunless %}
+    {% endfor %}
+    </small></nav>
+  {% endif %}
+  <p>&nbsp;</p>
+  <p><small>Proudly published with <a class="external" href="https://jekyllrb.com/">Jekyll</a> v{{ jekyll.version }} & <a class="external" href="https://pages.github.com/">GitHub Pages</a>, powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">8.0.0</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+{% endif %}

@@ -1,0 +1,1 @@
+console.log('Powered by Hydejack v8.0.0 <https://hydejack.com/>');
