@@ -19,7 +19,8 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 deepit.at
+title:                 "Stefan's thoughts"
+short_title:           deepit.at
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -27,10 +28,10 @@ description:           >
   All things related System Center Configuration Manager, Windows Policies (GPO & GPP), Internet Explorer & Microsoft Edge, PowerShell & VBScript and others
 
 # A shorter description for the sidebar.
-tagline:               'A blog dedicated to my work and private thoughts'
+tagline:               A blog dedicated to my work, misc stuff &amp; private thoughts
 
 # A list of keywords for your blog
-keywords:              [ 'System Center Configuration Manager', 'Configuration Manager', 'SCCM', 'OS Deployment', 'Microsoft Deployment Toolkit', 'Deployment Toolkit', 'MDT', 'Microsoft Windows', 'Windows', 'Windows 7', 'Windows 10', 'Active Directory', 'APGM', 'Policies', 'Group Policies', 'GPO', 'Group Policy Preferences', 'GPP', 'Windows Firewall', 'BitLocker', 'Local Administrator Password Solution', 'LAPS', 'Browser', 'Web Proxy Autodiscovery Protocol', 'WPAD', 'Enterprise Mode for Internet Explorer', 'Microsoft EMIE', 'EMIE', 'Internet Explorer', 'IE', 'Microsoft Edge', 'Edge', 'PowerShell', 'Scripting', 'pwsh', 'VBScript', 'Software Engineering', 'C#', 'ProfileBackup', 'PstBackup', 'XML', 'JSON', 'Scrum' ]
+keywords:              [ 'System Center Configuration Manager', 'Configuration Manager', 'SCCM', 'OS Deployment', 'OSD', 'Microsoft Deployment Toolkit', 'Deployment Toolkit', 'MDT', 'Microsoft Windows', 'Windows', 'Windows 7', 'Windows 10', 'Active Directory', 'APGM', 'Policies', 'Group Policies', 'GPO', 'Group Policy Preferences', 'GPP', 'Windows Firewall', 'BitLocker', 'Local Administrator Password Solution', 'LAPS', 'Browser', 'Web Proxy Autodiscovery Protocol', 'WPAD', 'Enterprise Mode for Internet Explorer', 'Microsoft EMIE', 'EMIE', 'Internet Explorer', 'IE', 'Microsoft Edge', 'Edge', 'PowerShell', 'Scripting', 'pwsh', 'VBScript', 'Software Engineering', 'C#', 'ProfileBackup', 'PstBackup', 'XML', 'JSON', 'Scrum' ]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
