@@ -144,7 +144,7 @@ hydejack:
   post_addons:         [ postination, about, newsletter ]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [ about, other, newsletter ]
+  project_addons:      [about, newsletter, other]
 
   # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     true
@@ -178,7 +178,7 @@ hydejack:
   no_theme_color:      false
 
   # Set to `true` when building with the `--lsi` option
-  use_lsi:             true
+  use_lsi:             false
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
@@ -240,7 +240,6 @@ exclude:
   - _js
   - _plugins
   - .sass-cache
-
 include:
   - LICENSE.md
 
@@ -326,7 +325,7 @@ kramdown:
     preview_as_code:   true
 
 compress_html:
-  comments:            ['<!-- ', ' -->']
+  comments:            [ '<!-- ', ' -->' ]
   clippings:           all
   endings:             all
   ignore:
