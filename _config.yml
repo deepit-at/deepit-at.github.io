@@ -24,13 +24,14 @@ title:                 deepit.at
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  A blog dedicated to my work and private opinions
+  All things related System Center Configuration Manager, Windows Policies (GPO & GPP), Internet Explorer & Microsoft Edge, PowerShell & VBScript and others
 
 # A shorter description for the sidebar.
-tagline:               ''
+tagline:               'A blog dedicated to my work and private opinions'
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [ 'System Center Configuration Manager', 'Configuration Manager', 'SCCM', 'Windows Policies', 'Policies', 'GPO', 'GPP',
+  'Internet Explorer', 'IE', 'Microsoft Edge', 'Edge', 'PowerShell', 'pwsh', 'VBScript' ]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -56,7 +57,7 @@ legal:
     href:              /terms-and-conditions/
   # - title:             Imprint
   #   href:              /imprint/
-  - title:             '<span class="icon-rss"></span> Feed'
+  - title:             '<span class="icon-rss"></span> RSS'
     href:              /feed.xml
 
 # Format of the permalinks
@@ -139,10 +140,10 @@ clicky:                101136295
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [postination, about, newsletter]
+  post_addons:         [ postination, about, newsletter ]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, other, newsletter]
+  project_addons:      [ about, other, newsletter ]
 
   # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     true
@@ -176,7 +177,7 @@ hydejack:
   no_theme_color:      false
 
   # Set to `true` when building with the `--lsi` option
-  use_lsi:             false
+  use_lsi:             true
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
@@ -324,7 +325,7 @@ kramdown:
     preview_as_code:   true
 
 compress_html:
-  comments:            ["<!-- ", " -->"]
+  comments:            ['<!-- ', ' -->']
   clippings:           all
   endings:             all
   ignore:
