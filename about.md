@@ -56,7 +56,7 @@ The photo for the sidebar is grabbed from [unsplash], photographed by [Ronald Sm
 ### Misc
 
 {% if site.clicky %}- [http://clicky.com/](http://clicky.com/{{ site.clicky }}) - sadly, GitHub is lacking some site analytics, this is where clicky comes to play{% endif %}
-- [https://www.deepl.com/translator/](https://www.deepl.com/translator/) - I may author the articles directly in english, but I check and `okay' them if their translation into german is understandable by me
+- [https://www.deepl.com/translator](https://www.deepl.com/translator) - I may author the articles directly in english, but I check and `okay' them if their translation into german is understandable by me
 - [http://www.network-science.de/ascii/](http://www.network-science.de/ascii/) for the ASCII art (font is 'larry3d') used in [humans.txt](/humans.txt)
 - [https://cookiepolicygenerator.com](https://cookiepolicygenerator.com) - GDPR Cookies Policy Generator
 - [https://gdprprivacypolicy.net](https://gdprprivacypolicy.net) - GDPR Privacy Policy Generator
