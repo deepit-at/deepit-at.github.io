@@ -27,7 +27,7 @@ description:           >
   All things related System Center Configuration Manager, Windows Policies (GPO & GPP), Internet Explorer & Microsoft Edge, PowerShell & VBScript and others
 
 # A shorter description for the sidebar.
-tagline:               'A blog dedicated to my work and private opinions'
+tagline:               'A blog dedicated to my work and private thoughts'
 
 # A list of keywords for your blog
 keywords:              [ 'System Center Configuration Manager', 'Configuration Manager', 'SCCM', 'OS Deployment', 'Microsoft Deployment Toolkit', 'Deployment Toolkit', 'MDT', 'Microsoft Windows', 'Windows', 'Windows 7', 'Windows 10', 'Active Directory', 'APGM', 'Policies', 'Group Policies', 'GPO', 'Group Policy Preferences', 'GPP', 'Windows Firewall', 'BitLocker', 'Local Administrator Password Solution', 'LAPS', 'Browser', 'Web Proxy Autodiscovery Protocol', 'WPAD', 'Enterprise Mode for Internet Explorer', 'Microsoft EMIE', 'EMIE', 'Internet Explorer', 'IE', 'Microsoft Edge', 'Edge', 'PowerShell', 'Scripting', 'pwsh', 'VBScript', 'Software Engineering', 'C#', 'ProfileBackup', 'PstBackup', 'XML', 'JSON', 'Scrum' ]
