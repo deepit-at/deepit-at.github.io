@@ -1,7 +1,7 @@
 ---
 layout:             post
 
-categories:         [  ]
+categories:         []
 tags:               [ personal ]
 
 date:               2018-08-25 09:30:00 +0200
@@ -14,7 +14,7 @@ title:              'Welcome!'
 # image:              https://dummyimage.com/wvga
 
 # excerpt_separator:  <!--more-->
-excerpt: |
+excerpt:            >
     I'm happy to welcome you to my blog.
     In my job I learned a lot from the community, posts in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk. Sure, I also made my own experiences and gained a lot of knowledge myself.
 ---
