@@ -27,7 +27,7 @@ RE_IGNORE  = /(re|data)-ignore/
 
 REPLACEMENT = '
   <hy-img root-margin="512px" %{attrs}>
-    <noscript><img data-ignore %{attrs}/></noscript>
+    <noscript><img data-ignore %{attrs}/></noscript> 
     <span class="loading" slot="loading" hidden>
       <span class="icon-cog"></span>
     </span>
