@@ -4,8 +4,7 @@ sfarnik:
   name:              Stefan Farnik
 
   # Used at the bottom of each page and at the top of the `about` layout
-  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:             |
+  about:             >
     My Name is Stefan Farnik and I'm living in Innsbruck in Austria.<br />
     I am a System Engineer, where my focus lies on the Microsoft portfolio, following a Windows client through its deployment using System Center Configuration Manager and Management using Group Policy & Preferences and a lot of scripting (for me PowerShell and VBScript are the most prominently used languages).
 
@@ -33,7 +32,7 @@ sfarnik:
 ninjacat:
   name:              NinjaCat
 
-  about:             |
+  about:             >
     The beloved NinjaCat \#WindowsInsiders
 
   accent_color:      '#268bd2'
