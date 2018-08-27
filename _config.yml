@@ -100,8 +100,6 @@ defaults:
       path:            ''
     values:
       image:           /assets/img/sidebar-bg.jpg
-        width:         2400
-        height:        1500
   - scope:
       type:            posts
     values:
