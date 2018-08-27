@@ -3,9 +3,12 @@
 {% assign lang = page.lang | default:site.lang | default:'en' %}
 <link rel="alternate" href="{{ page.url | absolute_url }}" hreflang="{{ lang | downcase | replace:'_','-' }}">
 
-<link rel="icon" media="all" type="image/vnd.microsoft.icon" href="{{ '/favicon.ico' | absolute_url }}">
-<link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}">
+<link rel="icon" media="all" type="image/vnd.microsoft.icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/icons/icon.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/icons/icon@0,375.png' | relative_url }}" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/icons/icon@0,625.png' | relative_url }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/icon@0,937.png' | relative_url }}" />
 
 <link rel="manifest" href="{{ '/assets/manifest.json' | relative_url }}">
 
@@ -21,7 +24,7 @@
   This is to avoid hard-coding URLs in JS (where they can't be discovered by automated tools).
 -->{% endcomment %}
 <link rel="dns-prefetch" href="{{ '/'                                                                       | relative_url }}" id="_baseURL">
-<link rel="dns-prefetch" href="{{ '/assets/js/hydejack-8.1.0.js'                                     | relative_url }}" id="_hrefJS">
+<link rel="dns-prefetch" href="{{ '/assets/js/hydejack-8.1.0.js'                                            | relative_url }}" id="_hrefJS">
 <link rel="dns-prefetch" href="{{ '/sw.js'                                                                  | relative_url }}" id="_hrefSW">
 <link rel="dns-prefetch" href="{{ '/assets/bower_components/fontfaceobserver/fontfaceobserver.standalone.js'| relative_url }}" id="_hrefFFO">
 <link rel="dns-prefetch" href="{{ '/assets/bower_components/katex/dist/katex.min.js'                        | relative_url }}" id="_hrefKatexJS">
