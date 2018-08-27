@@ -98,8 +98,6 @@ reading_time:
 defaults:
   - scope:
       path:            ''
-    values:
-      image:           /assets/img/sidebar-bg.jpg
   - scope:
       type:            posts
     values:
