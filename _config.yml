@@ -97,9 +97,15 @@ reading_time:
 
 defaults:
   - scope:
-      type:           posts
+      path:            ''
     values:
-      comments:       true
+      image:           /assets/img/sidebar-bg.jpg
+        width:         2400
+        height:        1500
+  - scope:
+      type:            posts
+    values:
+      comments:        true
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:
@@ -284,8 +290,8 @@ webmaster_verifications:
 #   yandex:              <verification-id>
 
 # Used for Twitter cards
-# twitter:
-#   username:            <shortname>
+twitter:
+  username:            stefan_farnik
 
 # Used for Facebook open graph
 # facebook:
@@ -294,11 +300,11 @@ webmaster_verifications:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                Stefan Farnik
+  links:
+    - https://twitter.com/stefan_farnik
+    - https://github.com/sfarnik
 
 
 # Other Plugins
