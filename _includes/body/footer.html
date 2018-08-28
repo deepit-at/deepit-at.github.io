@@ -8,7 +8,7 @@
       {% assign year_string = year_from %}
     {% else %}
       {% assign from_to_seperator = site.data.strings.from_to_seperator | default: '-' %}
-      {% assign year_string = year_from | append: "&nbsp;" | append: from_to_seperator | append: "&nbsp;" | append: year_to %}
+      {% assign year_string = year_from | append: '&nbsp;' | append: from_to_seperator | append: '&nbsp;' | append: year_to %}
     {% endif %}
     <p><small class="copyright">{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}</small></p>
   {% endif %}
