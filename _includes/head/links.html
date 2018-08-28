@@ -35,3 +35,5 @@
 {% if disqus %}
 <link rel="dns-prefetch" href="https://{{ disqus }}.disqus.com" id="_hrefDisqus">
 {% endif %}
+
+<link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | absolute_url }}" title="{{ site.title }}" />
