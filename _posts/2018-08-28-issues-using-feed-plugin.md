@@ -43,7 +43,7 @@ Which leads to a this part in the ```feed.xml```
 ~~~
 
 See the trailing whitespace ?
-What we're going to do about it ?
+What are we going to do about it ?
 
 <!--more-->
 

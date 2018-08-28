@@ -17,7 +17,7 @@ Or, when you landed first on this page, I hope you can find something - or get i
 
 <!--author-->
 
-When I started my job and began to administrate our clients, I relied heavily on the knowledge of others which I found in the community around Microsoft & Windows - in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk.
+When I started my job and began to administrate our clients, I relied heavily on the knowledge of others which I found in the community around Microsoft & Windows - in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savvy folk.
 
 Soon enough, I've gone my own ways and strived ro realize and implement my own ideas to help my employer to have productive workplaces.
 
