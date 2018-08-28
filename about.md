@@ -27,7 +27,7 @@ Now, 10+ years later, I decided it's time to give something back. Back to the gi
 
 ### Jekyll
 
-This site/blog is published using [jekyll] which is hosted on [GitHub pages].
+This site/blog is published using [Jekyll] which is hosted on [GitHub pages].
 Please follow their link to find information about both open source project and their license.
 
 {% unless jekyll.environment == 'development' %}
@@ -63,7 +63,7 @@ The photo for the sidebar is grabbed from [unsplash], photographed by [Ronald Sm
 - [https://termsandconditionstemplate.net](https://termsandconditionstemplate.net) - Template for Terms & Conditions
 
 
-[jekyll]: https://jekyllrb.com/
+[Jekyll]: https://jekyllrb.com/
 [GitHub pages]: https://pages.github.com/
 [Hydejack]: https://hydejack.com/
 [Let's Encrypt]: https://letsencrypt.org/
