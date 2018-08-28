@@ -11,3 +11,6 @@
     });
     /*{% endunless %}*/
 }(window, document);</script>
+{% if content contains 'twitter-tweet' or page.content contains 'twitter-tweet' %}
+  <link rel="dns-prefetch" href="//platform.twitter.com/widgets.js" id="_hrefWJS">
+{% endif %}
