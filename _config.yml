@@ -18,33 +18,32 @@ baseurl:               ''
 # You may also provide a location, e.g.: en-us, de_AT.
 lang:                  en
 
+timezone:              Europe/Vienna
+future:                false
+
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 "Stefan's thoughts"
-short_title:           deepit.at
-
-# A short description (~150 chars) of the page used for the meta description tag.
-# Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
-  All things related System Center Configuration Manager, Windows Policies (GPO & GPP), Internet Explorer & Microsoft Edge, PowerShell & VBScript and others
-
-# A shorter description for the sidebar.
-tagline:               A blog dedicated to my work, misc stuff &amp; private thoughts
-
-# A list of keywords for your blog
-keywords:              [ 'System Center Configuration Manager', 'Configuration Manager', 'SCCM', 'OS Deployment', 'OSD', 'Microsoft Deployment Toolkit', 'Deployment Toolkit', 'MDT', 'Microsoft Windows', 'Windows', 'Windows 7', 'Windows 10', 'Active Directory', 'APGM', 'Policies', 'Group Policies', 'GPO', 'Group Policy Preferences', 'GPP', 'Windows Firewall', 'BitLocker', 'Local Administrator Password Solution', 'LAPS', 'Browser', 'Web Proxy Autodiscovery Protocol', 'WPAD', 'Enterprise Mode for Internet Explorer', 'Microsoft EMIE', 'EMIE', 'Internet Explorer', 'IE', 'Microsoft Edge', 'Edge', 'PowerShell', 'Scripting', 'pwsh', 'VBScript', 'Software Engineering', 'C#', 'ProfileBackup', 'PstBackup', 'XML', 'JSON', 'Scrum' ]
+title:                 Stefan's thoughts
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/icons/icon.png
 
-timezone:              'Europe/Vienna'
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:
+  All things related System Center Configuration Manager, Windows Policies (GPO & GPP), Internet Explorer & Microsoft Edge, PowerShell & VBScript and others
 
-future:                false
+# A shorter description for the sidebar.
+tagline:
+  A blog dedicated to my work, misc stuff &amp; private thoughts
+
+# A list of keywords for your blog
+keywords:
+  [ 'System Center Configuration Manager', 'Configuration Manager', 'SCCM', 'OS Deployment', 'OSD', 'Microsoft Deployment Toolkit', 'Deployment Toolkit', 'MDT', 'Microsoft Windows', 'Windows', 'Windows 7', 'Windows 10', 'Active Directory', 'APGM', 'Policies', 'Group Policies', 'GPO', 'Group Policy Preferences', 'GPP', 'Windows Firewall', 'BitLocker', 'Local Administrator Password Solution', 'LAPS', 'Browser', 'Web Proxy Autodiscovery Protocol', 'WPAD', 'Enterprise Mode for Internet Explorer', 'Microsoft EMIE', 'EMIE', 'Internet Explorer', 'IE', 'Microsoft Edge', 'Edge', 'PowerShell', 'Scripting', 'pwsh', 'VBScript', 'Software Engineering', 'C#', 'ProfileBackup', 'PstBackup', 'XML', 'JSON', 'Scrum' ]
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             >
-  &copy; <!--copyyears--> deepit.at; All rights reserved.
+copyright:             © <!--copyyears--> deepit.at; All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
@@ -68,7 +67,6 @@ permalink:             /:categories/:year-:month-:day-:title/
 # Pagination configuration (used by the `blog` layout)
 paginate:              8
 paginate_path:         /page:num/
-
 
 # Customizaton
 # ========================================================================================
@@ -97,11 +95,10 @@ reading_time:
 
 defaults:
   - scope:
-      path:            ''
-  - scope:
       type:            posts
     values:
       comments:        true
+      hide_description: true
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:
@@ -147,7 +144,7 @@ hydejack:
   post_addons:         [ postination, about, newsletter ]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other]
+  project_addons:      [ about, newsletter, other ]
 
   # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     true
