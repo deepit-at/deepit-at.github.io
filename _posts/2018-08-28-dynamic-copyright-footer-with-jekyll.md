@@ -21,7 +21,7 @@ excerpt_separator:  <!--more-->
 ---
 
 As you might have noticed, I am using Jekyll for this blog.
-I keep tinkering with it, instead of writing some articles. So I decided maybe I should write some article about ... my tinkering with Jekyll.
+I keep tinkering with it, instead of writing some blog posts. So I decided maybe I should write some post about ... my tinkering with Jekyll.
 
 Sound's good ? Here we go!
 
