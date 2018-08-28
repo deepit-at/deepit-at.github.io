@@ -2,7 +2,7 @@
 layout:             post
 
 categories:         []
-tags:               [ jekyll ]
+tags:               [ self, jekyll ]
 
 date:               2018-08-28 12:41:07 +0200
 # last_modified_at: <datetime>
