@@ -95,6 +95,10 @@ reading_time:
 
 defaults:
   - scope:
+      path:            index.html
+    values:
+      hide_description: true
+  - scope:
       type:            posts
     values:
       comments:        true
