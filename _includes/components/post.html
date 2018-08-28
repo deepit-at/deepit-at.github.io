@@ -14,6 +14,7 @@
 
     <p class="post-date heading">
       {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
+      {% comment %}
       {% assign last_modified = site.data.strings.last_modified | default:"last modified: " %}
       {% if post.last_modified_at and post.last_modified_at > post.date %}
         {% assign datestring = post.date | date: "%d %b %Y" %}
@@ -22,6 +23,7 @@
           {% assign post_format = site.data.strings.date_formats.post_detail | default:"%d %b %Y" %}
         {% endif %}
       {% endif %}
+      {% endcomment %}
       {% assign date_string = post.date | date:post_format %}
       {% if site.data.strings.date_formats.append_tz %}
         {% assign date_string_xmlschema = post.date | date_to_xml_schema %}
@@ -30,9 +32,11 @@
         {% assign date_string = date_string | append:' GMT' | append: tz_offset %}
       {% endif %}
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ date_string }}</time>
+      {% comment %}
       {% if post.last_modified_at %}
         ({{ last_modified }} {{ post.last_modified_at | date:post_format | strip }})
       {% endif %}
+      {% endcomment %}
       {% assign category_start     = site.data.strings.category_start     | default:"in " %}
       {% assign tag_start          = site.data.strings.tag_start          | default:"on " %}
       {% assign category_separator = site.data.strings.category_separator | default:" / " %}
