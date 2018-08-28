@@ -68,6 +68,10 @@ permalink:             /:categories/:year-:month-:day-:title/
 paginate:              8
 paginate_path:         /page:num/
 
+# feed configuration
+feed:
+  summary_only:        true
+
 # Customizaton
 # ========================================================================================
 
@@ -245,15 +249,15 @@ exclude:
   - _plugins
   - .sass-cache
 include:
+  - feed.xml
   - LICENSE.md
-
 
 # Plugins
 # ========================================================================================
 
 plugins:
   - jekyll-default-layout
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-optional-front-matter
