@@ -5,7 +5,7 @@ categories:         []
 tags:               [ personal ]
 
 date:               2018-08-26 22:30:00 +0200
-# last_modified_at:   2018-08-26 22:30:00 +0200
+last_modified_at:   2018-08-28 08:55:32 +0200
 # published:          false
 
 author:             sfarnik
@@ -14,13 +14,15 @@ title:              'Welcome to my new blog!'
 # image:              https://dummyimage.com/wvga
 
 # excerpt_separator:  <!--more-->
-excerpt:            >
+excerpt:
     I'm happy to welcome you to my blog.
     In my job I learned a lot from the community, posts in various Forums (eg. TechNet), scripts, snippets and blog articles from MVPs and/or other tech savy folk. Sure, I also made my own experiences and gained a lot of knowledge myself.
 
+description:
+    I will cover things like System Center Configuration Manager, Windows Policies (GPO & GPP), Internet Explorer & Microsoft Edge, PowerShell & VBScript and other job related things.
+
 redirect_from:
     - /2018-08-26-welcome-to-deepit.at/
-
 ---
 
 Hello curious folk!
