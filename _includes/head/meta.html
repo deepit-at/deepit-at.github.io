@@ -5,9 +5,9 @@
 {% unless page.redirect %}
   {% if plugins contains 'jekyll-seo-tag' %}{% include head/seo-tag.html %}
   {% else %}{% include head/seo-fallback.html %}{% endif %}
-<meta property="twitter:image" content="{{ '/assets/icons/iicon@3x.png' | absolute_url }}" />
-<meta property="og:image" content="{{ '/assets/icons/icon@3x.png' | absolute_url }}" />
-<meta property="og:image" content="{{ '/assets/icons/icon.png' | absolute_url }}">
+<meta property="twitter:image" content="{{ '/assets/icons/icon_576x576.png' | absolute_url }}" />
+<meta property="og:image" content="{{ '/assets/icons/icon_576x576.png' | absolute_url }}" />
+<meta property="og:image" content="{{ '/assets/icons/icon_384x384.png' | absolute_url }}">
   {% if site.keywords.size > 0 or page.keywords.size > 0 %}
 <meta name="keywords" content="{{ page.keywords | default:site.keywords | join:',' }}">
   {% endif %}
@@ -24,9 +24,7 @@
 
 <meta name="application-name" content="{{ site.title }}">
 <meta name="msapplication-config" content="{{ '/assets/ieconfig.xml' | relative_url }}">
-<meta name="msapplication-TileImage" content="{{ '/assets/icons/icon@0,75x.png' | relative_url }}">
 {% unless site.hydejack.no_theme_color %}
-<meta name="msapplication-TileColor" content="{{ site.accent_color | default:'#4fb1ba' }}">
 <meta name="theme-color" content="{{ site.theme_color | default:site.accent_color | default:'#4fb1ba' }}">
 {% endunless %}
 
