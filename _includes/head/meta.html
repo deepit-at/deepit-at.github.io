@@ -5,7 +5,8 @@
 {% unless page.redirect %}
   {% if plugins contains 'jekyll-seo-tag' %}{% include head/seo-tag.html %}
   {% else %}{% include head/seo-fallback.html %}{% endif %}
-
+<meta property="og:image" content="{{ '/assets/icons/icon@0,75x.png.png' | relative_url }}" />
+<meta property="og:image" content="{{ '/assets/icons/icon.png' | relative_url }}">
   {% if site.keywords.size > 0 or page.keywords.size > 0 %}
     <meta name="keywords" content="{{ page.keywords | default:site.keywords | join:',' }}">
   {% endif %}
