@@ -5,9 +5,9 @@
 {% unless page.redirect %}
   {% if plugins contains 'jekyll-seo-tag' %}{% include head/seo-tag.html %}
   {% else %}{% include head/seo-fallback.html %}{% endif %}
-<meta property="twitter:image" content="{{ '/assets/icons/iicon@3x.png' | relative_url }}" />
-<meta property="og:image" content="{{ '/assets/icons/iicon@3x.png' | relative_url }}" />
-<meta property="og:image" content="{{ '/assets/icons/icon.png' | relative_url }}">
+<meta property="twitter:image" content="{{ '/assets/icons/iicon@3x.png' | absolute_url }}" />
+<meta property="og:image" content="{{ '/assets/icons/icon@3x.png' | absolute_url }}" />
+<meta property="og:image" content="{{ '/assets/icons/icon.png' | absolute_url }}">
   {% if site.keywords.size > 0 or page.keywords.size > 0 %}
 <meta name="keywords" content="{{ page.keywords | default:site.keywords | join:',' }}">
   {% endif %}
