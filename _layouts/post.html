@@ -17,7 +17,7 @@
 layout: base
 ---
 
-{% include components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image %}
+{% include components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image header_tag='h1' %}
 
 <hr class="dingbat related" />
 
@@ -33,7 +33,7 @@ layout: base
     {% assign plugins = site.plugins | default:site.gems %}
     {% if plugins contains 'jekyll-paginate' %}
       {% for post in paginator.posts %}
-        {% include components/post.html post=post no_link_title=page.no_link_title no_excerpt=page.no_excerpt hide_image=page.hide_image %}
+        {% include components/post.html post=post no_link_title=page.no_link_title no_excerpt=page.no_excerpt hide_image=page.hide_image header_tag='h2' %}
       {% endfor %}
       {% include components/postination.html %}
     {% else %}
