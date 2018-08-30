@@ -2,18 +2,11 @@
 {% assign no_link_title = include.no_link_title %}
 {% assign no_excerpt    = include.no_excerpt    %}
 {% assign hide_image    = include.hide_image    %}
+{% assign header_tag    = include.header_tag    %}
 {% assign author        = site.data.authors[post.author] | default:site.data.authors.first[1] | default:site.author %}
 
 <article id="post{{ post.id | replace:'/','-' }}" class="page post mb6" role="article">
   <header>
-
-    {% capture header_tag %}
-      {% if no_excerpt %}
-        h1
-      {% else %}
-        h2
-      {% endif %}
-    {% endcapture %}
 
     <{{ header_tag | strip }} class="post-title">
       {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="flip-title">{% endunless %}
