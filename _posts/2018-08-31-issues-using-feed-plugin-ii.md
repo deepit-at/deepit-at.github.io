@@ -4,7 +4,7 @@ layout:             post
 categories:         []
 tags:               [ self, jekyll ]
 
-date:               2018-08-31 13:01:00 +0200
+date:               2018-08-31 13:47p:00 +0200
 # last_modified_at:   <datetime>
 # published:          false
 
@@ -103,6 +103,7 @@ So, my ```feed.xml``` now looks like this:
 ~~~xml
 ---
 ---
+{% raw %}
 <?xml version="1.0" encoding="utf-8"?>{% capture xml_content %}
 {% if page.xsl %}
 <?xml-stylesheet type="text/xml" href="{{ '/feed.xslt.xml' | absolute_url }}"?>
@@ -203,6 +204,7 @@ So, my ```feed.xml``` now looks like this:
       </entry>
     {% endfor %}
   </feed>{% endcapture %}{{ xml_content | normalize_whitespace }}
+{% endraw %}
 ~~~
 
 All the best,<br/>Stefan
