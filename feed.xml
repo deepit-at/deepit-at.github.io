@@ -42,7 +42,7 @@
 
     {% comment %}<contributor></contributor>{% endcomment %}
 
-    {% assign posts = site.posts | where_exp: "post", "post.draft != true", "post.published != false" %}
+    {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
     {% for post in posts limit: 10 %}
       <entry{% if post.lang or site.lang %}{{" "}}xml:lang="{{ post.lang | default: site.lang }}"{% endif %}>
         <id>{{ post.id | absolute_url | xml_escape }}</id>
