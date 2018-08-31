@@ -43,6 +43,7 @@ So I simply assign either the first author in the collection if it exists, or th
 Its just one line addes and afterwards the . notation replaced by an underscore (_), assesing our temporary assigned variable.
 
 ~~~xml
+{% raw %}
     {% assign site_author = site.data.authors.first[1] | default: site.author %}
     {% if site_author %}
       <author>
@@ -55,6 +56,7 @@ Its just one line addes and afterwards the . notation replaced by an underscore 
         {% endif %}
       </author>
     {% endif %}
+{% endraw %}
 ~~~
 
 This completed the feed itself, now we're going to adapt the posts, represented as ```<entry>``` in Atom feeds.
@@ -68,8 +70,10 @@ The first thing is about the used language, if a post doesn't specify one, it sh
 Each post/entry also has an author element; here the plugin is utilizing the authors collection, however, it doesn't use the social property.
 
 ~~~xml
+{% raw %}
         {% assign post_author_email = post_author.social.email | default: post_author.email | default: nil %}
         {% assign post_author_uri = post_author.social.uri | default: post_author.uri | default: nil %}
+{% endraw %}
 ~~~
 
 Now, we're coming for the full-feed. At first I didn't like the idea that the full feed is being used.
@@ -80,6 +84,7 @@ So, now I also use the full-feed, however I thought it would make sense to add a
 Here I also make use of the ```<![CDATA[ ]]>``` element in xml, so there is no more escaping needed and the feed also looks nice in Internet Explorer's default view.
 
 ~~~xml
+{% raw %}
         {% unless site.feed.summary_only %}
         <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
           <div xmlns="http://www.w3.org/1999/xhtml"><![CDATA[
@@ -90,6 +95,7 @@ Here I also make use of the ```<![CDATA[ ]]>``` element in xml, so there is no m
           ]]></div>
         </content>
         {% endunless %}
+{% endraw %}
 ~~~
 
 ![The feed also looks nice in Internet Explorer's default view](/assets/img/posts/feed-ie.png)
