@@ -20,9 +20,9 @@ excerpt_separator:  <!--more-->
 # redirect_from:
 ---
 
-Additionally to [part I](/2018-08-28-issues-using-feed-plugin/) this post should finalize my adaptions and show that I was missing the plugins ability to use the authors collection to access to the email and url properties.
+Additionally to [Part I](/2018-08-28-issues-using-feed-plugin/) this post should finalize my adaptions and show that I was missing the plugins ability to use the authors collection to access to the email and url properties.
 
-Also, the plugin does list the correct language for the feed itself, utilizing the ```site.lang``` property, but it fails to do so for the posts. It would be possible to set defaults in ````_config.yml``` for the _posts collection, but it would be better if the language falls back to the site setting.
+Also, the plugin does list the correct language for the feed itself, utilizing the ```site.lang``` property, but it fails to do so for the posts. It would be possible to set defaults in ```_config.yml``` for the _posts collection, but it would be better if the language falls back to the site setting.
 
 The third issue I was about to mention is the fact, that the plugin is using and exposing the full feed.
 
