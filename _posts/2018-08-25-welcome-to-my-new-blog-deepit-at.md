@@ -9,7 +9,7 @@ last_modified_at:   2018-08-28 08:55:32 +0200
 # published:          false
 
 author:             sfarnik
-title:              'Welcome to my new blog!'
+title:              'Welcome To My New Blog!'
 
 # image:              https://dummyimage.com/wvga
 
