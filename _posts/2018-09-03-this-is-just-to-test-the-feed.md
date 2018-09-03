@@ -13,6 +13,8 @@ author:             sfarnik
 
 # image:              https://dummyimage.com/800x480
 
+comments:           false
+
 excerpt_separator:  <!--more-->
 # excerpt:
 # description:
