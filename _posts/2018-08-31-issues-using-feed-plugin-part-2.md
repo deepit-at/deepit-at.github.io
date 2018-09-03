@@ -17,7 +17,8 @@ excerpt_separator:  <!--more-->
 # excerpt:
 # description:
 
-# redirect_from:
+redirect_from:
+    - /2018-08-31-issues-using-feed-plugin-ii/
 ---
 
 Additionally to [previous part]({% post_url 2018-08-28-issues-using-feed-plugin %}) this post should finalize my adaptions and show that I was missing the plugins ability to use the authors collection to access to the email and url properties.
