@@ -5,19 +5,6 @@
 <?xml-stylesheet type="text/xml" href="{{ '/feed.xslt.xml' | absolute_url }}"?>
 {% endif %}
   <feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0" {% if site.lang %}xml:lang="{{ site.lang }}"{% endif %}>
-    <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
-    <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
-    <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" {% if site.lang %}hreflang="{{ site.lang }}" {% endif %}/>
-
-    {% unless site.hydejack.no_theme_color %}
-    <webfeeds:accentColor>{{ site.theme_color | default:site.accent_color | default:'#4fb1ba' | remove_first: '#' }}</webfeeds:accentColor>
-    {% endunless %}
-    <webfeeds:logo>{{ '/assets/icons/icon.png' | absolute_url }}</webfeeds:logo>
-    <webfeeds:cover image="{{ '/assets/icons/icon_576x576.png' | absolute_url }}" />
-    <link rel="icon" href="{{ '/assets/icons/favicon.ico' | absolute_url }}" />
-    <link rel="logo" href="{{ '/assets/icons/icon.png' | absolute_url }}" />
-    <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ '/' | absolute_url | xml_escape }}</id>
 
     {% if site.title or site.name %}
     <title type="text">{{ site.title | default: site.name | smartify | strip | xml_escape }}</title>
@@ -26,6 +13,27 @@
     {% if site.description %}
     <subtitle>{{ site.description | strip | xml_escape }}</subtitle>
     {% endif %}
+
+    <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
+    <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" {% if site.lang %}hreflang="{{ site.lang }}" {% endif %}/>
+
+    {% if site.feed.hub %}
+    <link href="{{ site.feed.hub }}" rel="hub"/>
+    {% endif %}
+
+    <webfeeds:icon>{{ '/assets/icons/favicon.ico' | absolute_url }}</webfeeds:icon>
+    <webfeeds:logo>{{ '/assets/icons/icon.png' | absolute_url }}</webfeeds:logo>
+    <webfeeds:cover image="{{ '/assets/icons/icon_576x576.png' | absolute_url }}" />
+    {% unless site.hydejack.no_theme_color %}
+    <webfeeds:accentColor>{{ site.theme_color | default:site.accent_color | default:'#4fb1ba' | remove_first: '#' }}</webfeeds:accentColor>
+    {% endunless %}
+    <link rel="icon" href="{{ '/assets/icons/favicon.ico' | absolute_url }}" />
+    <link rel="logo" href="{{ '/assets/icons/icon.png' | absolute_url }}" />
+    <icon>{{ '/assets/icons/favicon.ico' | absolute_url }}</icon>
+    <logo>{{ '/assets/icons/icon.png' | absolute_url }}</logo>
+    <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ '/' | absolute_url | xml_escape }}</id>
 
     {% assign site_author = site.data.authors.first[1] | default: site.author %}
     {% if site_author %}

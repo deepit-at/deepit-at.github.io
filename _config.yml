@@ -71,6 +71,7 @@ paginate_path:         /page:num/
 # feed configuration
 feed:
   # summary_only:        true
+  hub:                 https://deepit.superfeedr.com/
 
 # Customizaton
 # ========================================================================================
