@@ -78,7 +78,7 @@
         {% comment %}<contributor></contributor>{% endcomment %}
 
         {% if post.excerpt and post.excerpt != empty %}
-        <summary type="html">{{ post.excerpt | normalize_whitespace | strip | xml_escape }}</summary>
+        <summary type="html"><![CDATA[{{ post.excerpt | normalize_whitespace | strip | xml_escape }}]]></summary>
         {% endif %}
 
         {% unless site.feed.summary_only %}
