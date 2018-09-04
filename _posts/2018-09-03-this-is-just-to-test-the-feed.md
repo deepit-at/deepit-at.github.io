@@ -5,7 +5,7 @@ categories:         []
 tags:               [ self ]
 
 date:               2018-09-03 19:58:20 +0200
-# last_modified_at:   2018-09-03 19:58:24 +0200
+last_modified_at:   2018-09-04 21:41:46 +0200
 # published:          false
 
 author:             sfarnik
@@ -22,9 +22,9 @@ excerpt_separator:  <!--more-->
 # redirect_from:
 ---
 
-[comment]: # ( https://guides.github.com/features/mastering-markdown/ )
-
 # In sitvs voluptas
+
+[comment]: # ( https://guides.github.com/features/mastering-markdown/ )
 
 ## Fraudes cum fuit qui mundi inficit germanae
 
