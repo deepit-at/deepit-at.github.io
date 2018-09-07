@@ -252,6 +252,7 @@ exclude:
   - .sass-cache
 include:
   - feed.xml
+  - test-feed.xml
   - LICENSE.md
 
 # Plugins
