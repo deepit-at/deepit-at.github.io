@@ -260,7 +260,7 @@ include:
 
 plugins:
   - jekyll-default-layout
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-optional-front-matter
