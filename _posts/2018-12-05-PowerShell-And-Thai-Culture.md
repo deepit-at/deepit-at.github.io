@@ -6,7 +6,7 @@ tags:               [ pwsh ]
 
 date:               2018-12-05 21:05:00 +0200
 # last_modified_at:   <datetime>
-published:          true
+# published:          false
 
 author:             sfarnik
 # title:              ''
