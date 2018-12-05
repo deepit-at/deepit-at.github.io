@@ -6,7 +6,7 @@ tags:               [ self, jekyll ]
 
 date:               2018-08-28 18:14:30 +0200
 # last_modified_at:   <datetime>
-# published:          false
+published:          false
 
 author:             sfarnik
 # title:              ''
