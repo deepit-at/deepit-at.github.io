@@ -295,8 +295,8 @@ webmaster_verifications:
 #   yandex:              <verification-id>
 
 # Used for Twitter cards
-twitter:
-  username:            stefan_farnik
+# twitter:
+#   username:            stefan_farnik
 
 # Used for Facebook open graph
 # facebook:
@@ -308,7 +308,7 @@ twitter:
 social:
   name:                Stefan Farnik
   links:
-    - https://twitter.com/stefan_farnik
+#   - https://twitter.com/stefan_farnik
     - https://github.com/sfarnik
 
 
