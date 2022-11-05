@@ -19,7 +19,7 @@ sfarnik:
   # Social media icons in sidebar.
   # Comment/uncommet to show/hide. Rearrange to change the order in which they appear.
   social:
-    twitter:         stefan_farnik
+    # twitter:         stefan_farnik
     email:           sfarnik@deepit.at
     # linkedin:        sfarnik
     # xing:            Stefan_Farnik
