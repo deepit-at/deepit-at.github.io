@@ -51,7 +51,7 @@ This site is using a TLS certificate from [Let's Encrypt], a free, automated and
 
 ### Assets
 
-The photo for the sidebar is grabbed from [unsplash], photographed by [Ronald Smeets (@ronaldsmeets)](https://unsplash.com/@ronaldsmeets?utm_medium=referral&amp;utm_campaign=photographer-credit) and titled "A Dreary Morning In The Mountains"
+The photo for the sidebar is grabbed from [unsplash], photographed by [Sebastian Hans (@@sebhans)](https://unsplash.com/@sebhans?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ### Misc
 
